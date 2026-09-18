@@ -1,6 +1,8 @@
 # ECAssistant
 
 > **The small, open-source .NET agent library.** Add intelligent, tool-using agents to any application — in a few lines of code.
+>
+> We named it ECAssistant because we believe AI is there to **assist** people — enhance your productivity, not automate you out of the loop. ECAssistant brings that assistance *into your applications*: it works alongside you and your users, not headless in the dark.
 
 Your models. Your keys. Your machine. Local GGUF or any OpenAI-compatible endpoint — same code, one config change. No telemetry. MIT.
 
@@ -13,11 +15,12 @@ Your models. Your keys. Your machine. Local GGUF or any OpenAI-compatible endpoi
 
 Most agent frameworks assume you'll ship your data to someone else's API — or lock you into one provider. ECAssistant is built the other way around:
 
-- 🧩 **Embeddable by design** — one NuGet package. Console app, desktop app, web backend: same library, same API.
+- 🧩 **Embeddable by design** — one NuGet package. Console app, desktop app, web backend: same library, same API. Give *your* application intelligence.
 - 🧠 **Bring your own brain** — local GGUF models or any OpenAI-compatible endpoint. Switch by config, not code.
 - 🔧 **12 built-in tools** — files, shell, git, dotnet, web, code editing, sub-agents. Permission-gated (approve / always / never per tool). Add your own via one interface.
 - 🪶 **Lightweight** — .NET 8, HTTP-based inference, zero native dependencies in your project, zero embedded blobs. Our CLI is 2.8 MB.
 - 🔒 **Private by default** — everything runs on your machine. Nothing phones home.
+- 🤝 **Assist-first** — the agent is a colleague, not a daemon: interactive, permission-gated, always showing its work. You stay in control.
 
 ## Quick Start — build an agent into your app
 
