@@ -9,7 +9,7 @@ Your models. Your keys. Your machine. Local GGUF or any OpenAI-compatible endpoi
 [![NuGet](https://img.shields.io/nuget/v/ECAssistant.Core?label=ECAssistant.Core)](https://www.nuget.org/packages/ECAssistant.Core)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-<!-- TODO: hero GIF here before launch — 10–20s TUI screencast, no sound -->
+![ECAssistant — real terminal session: install, launch, ask, answer](demo.gif)
 
 ## Why
 
