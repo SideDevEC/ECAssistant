@@ -71,13 +71,13 @@ First run asks local or remote, downloads only what you pick, and you're chattin
 
 ## Documentation
 
-- **Getting started** — install, configure, first conversation
-- **Agent lifecycle** — composition root → session → decision loop
-- **Tools & permissions** — the 12 built-ins, writing custom tools
-- **Local vs Remote** — GGUF vs OpenAI-compatible, switching
-- **Security & Privacy** — what runs where, what leaves your machine
+- **[Getting started](docs/getting-started.md)** — install, configure, first conversation
+- **[Agent lifecycle](docs/agent-lifecycle.md)** — composition root → session → decision loop
+- **[Tools & permissions](docs/tools-and-permissions.md)** — the 12 built-ins, writing custom tools
+- **[Local vs Remote](docs/local-vs-remote.md)** — GGUF vs OpenAI-compatible, switching
+- **[Security & Privacy](docs/security-and-privacy.md)** — what runs where, what leaves your machine
 
-*(docs land with the first public release wave — each repo ships its own ARCHITECTURE.md in the meantime)*
+Each repo also ships its own `ARCHITECTURE.md` for the deep dive.
 
 ## Contributing
 
