@@ -27,7 +27,7 @@ Every tool call goes through the policy before it executes:
 - **always** — you trust this tool; it runs without asking
 - **never** — disabled; the agent knows it can't use it
 
-The policy is **per tool**, so a typical setup looks like: Files = always, Shell = approve, Web = approve. The agent *shows its work* — every call, input, and result is visible to you before or as it happens. That's the assist-first principle: you stay in the loop.
+The policy is **per tool** (config-level: always / approve / never), so a typical setup looks like: Files = always, Shell = approve. At prompt time you choose **y** (allow once), **a** (always for this session — remembered per pattern, e.g. one approval covers `git` commands or code edits), or **n** (deny). Session approvals are never persisted — a fresh start is always fully gated. The agent *shows its work* — every call, input, and result is visible to you before or as it happens. That's the assist-first principle: you stay in the loop. The agent *shows its work* — every call, input, and result is visible to you before or as it happens. That's the assist-first principle: you stay in the loop.
 
 ## Custom tools
 
