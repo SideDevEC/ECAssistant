@@ -21,6 +21,8 @@ Most agent frameworks assume you'll ship your data to someone else's API — or 
 - 🪶 **Lightweight** — .NET 8, HTTP-based inference, zero native dependencies in your project, zero embedded blobs. Our CLI is 2.8 MB.
 - 🔒 **Private by default** — everything runs on your machine. Nothing phones home.
 - 🤝 **Assist-first** — the agent is a colleague, not a daemon: interactive, permission-gated, always showing its work. You stay in control.
+- 👁️ **Vision structure extraction** — screenshots, UI mockups, and scanned PDFs in; a fixed, versioned JSON schema out (elements, bounding boxes, label↔control associations, semantic groups). Grammar-enforced at the sampler level — the shape is physically guaranteed, not hoped for.
+- 🎯 **Grammar-forced reliability** — agent decisions and tool calls are token-level constrained (GBNF): valid JSON with typed parameters on even a 4B local model.
 
 ## Quick Start — build an agent into your app
 
