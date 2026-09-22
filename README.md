@@ -17,7 +17,7 @@ Most agent frameworks assume you'll ship your data to someone else's API — or 
 
 - 🧩 **Embeddable by design** — one NuGet package. Console app, desktop app, web backend: same library, same API. Give *your* application intelligence.
 - 🧠 **Bring your own brain** — local GGUF models or any OpenAI-compatible endpoint. Switch by config, not code.
-- 🔧 **12 built-in tools** — files, shell, git, dotnet, web, code editing, sub-agents. Permission-gated (approve / always / never per tool). Add your own via one interface.
+- 🔧 **11 built-in tools** — files, shell, git, dotnet, code editing, sub-agents, vision structure. Permission-gated (approve / always / never per tool). Add your own via one interface.
 - 🪶 **Lightweight** — .NET 8, HTTP-based inference, zero native dependencies in your project, zero embedded blobs. Our CLI is 2.8 MB.
 - 🔒 **Private by default** — everything runs on your machine. Nothing phones home.
 - 🤝 **Assist-first** — the agent is a colleague, not a daemon: interactive, permission-gated, always showing its work. You stay in control.
@@ -75,7 +75,7 @@ First run asks local or remote, downloads only what you pick, and you're chattin
 
 - **[Getting started](docs/getting-started.md)** — install, configure, first conversation
 - **[Agent lifecycle](docs/agent-lifecycle.md)** — composition root → session → decision loop
-- **[Tools & permissions](docs/tools-and-permissions.md)** — the 12 built-ins, writing custom tools
+- **[Tools & permissions](docs/tools-and-permissions.md)** — the 11 built-ins, writing custom tools
 - **[Local vs Remote](docs/local-vs-remote.md)** — GGUF vs OpenAI-compatible, switching
 - **[Security & Privacy](docs/security-and-privacy.md)** — what runs where, what leaves your machine
 

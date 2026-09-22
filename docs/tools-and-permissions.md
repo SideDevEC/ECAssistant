@@ -1,6 +1,6 @@
 # Tools & Permissions
 
-An agent is only as useful as what it's allowed to *do* — and as trustworthy as how you control it. ECAssistant ships 12 built-in tools, all permission-gated, plus a one-interface API for your own.
+An agent is only as useful as what it's allowed to *do* — and as trustworthy as how you control it. ECAssistant ships 11 built-in tools, all permission-gated, plus a one-interface API for your own.
 
 ## The built-ins
 
