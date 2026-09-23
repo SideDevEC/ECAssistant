@@ -24,14 +24,15 @@ await services.SessionBuilder.BuildAsync(session, externalTools: null);
 - `AddListener` registers an `IOutputListener` — that's how you receive streamed tokens, tool calls, and tool results. (The terminal host uses this to render chat; your app can do anything: UI, logging, forwarding.)
 - `BuildAsync` attaches the built-in tools and any **external tools** you register (implement one interface — that's the whole custom-tool API).
 
-## 3. Decision loop
+## 3. Orchestrator
 
 ```csharp
-var loop = new EDecisionLoop(session.Engine, session);
-await loop.ExecuteInteractiveLoop("Summarize the docs in this folder");
+var orchestrator = session.Orchestrator;
+var result = await orchestrator.ExecuteMultiStep("Summarize the docs in this folder");
+Console.WriteLine(result.FinalOutput);
 ```
 
-The loop is the agent's brain:
+The orchestrator is the agent's brain:
 
 1. Model proposes an answer or a tool call
 2. Tool calls are checked against the **permission policy** (approve / always / never)

@@ -46,9 +46,10 @@ session.AddListener(myListener);          // implements IOutputListener
 
 await services.SessionBuilder.BuildAsync(session, externalTools: null);
 
-// 3. Run the agent — it plans, calls tools, and streams its answer
-var loop = new EDecisionLoop(session.Engine, session);
-await loop.ExecuteInteractiveLoop("Summarize the docs in this folder");
+// 3. Run the agent — the orchestrator plans, calls tools, and returns when done
+var orchestrator = session.Orchestrator;
+var result = await orchestrator.ExecuteMultiStep("Summarize the docs in this folder");
+Console.WriteLine(result.FinalOutput);
 ```
 
 **A complete, runnable wiring example lives in [ECAssistantConsole](https://github.com/SideDevEC/ECAssistantConsole) — the full host in ~100 lines.**
@@ -74,7 +75,7 @@ First run asks local or remote, downloads only what you pick, and you're chattin
 ## Documentation
 
 - **[Getting started](docs/getting-started.md)** — install, configure, first conversation
-- **[Agent lifecycle](docs/agent-lifecycle.md)** — composition root → session → decision loop
+- **[Agent lifecycle](docs/agent-lifecycle.md)** — composition root → session → orchestrator
 - **[Tools & permissions](docs/tools-and-permissions.md)** — the 11 built-ins, writing custom tools
 - **[Local vs Remote](docs/local-vs-remote.md)** — GGUF vs OpenAI-compatible, switching
 - **[Security & Privacy](docs/security-and-privacy.md)** — what runs where, what leaves your machine
