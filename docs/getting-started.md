@@ -11,7 +11,7 @@ ecassistant
 
 First run asks **local or remote**:
 
-- **Local** — the wizard installs the LLM server to `~/.ECAssistantLLM/server/` (from NuGet, no manual steps), then you pick chat / vision / embedding models from the built-in catalog. Downloads are SHA-256 verified. After setup nothing downloads at chat time.
+- **Local** — the wizard installs the LLM server to `~/ECALLM/server/` (from NuGet, no manual steps), then you pick chat / vision / embedding models from the built-in catalog. Downloads are SHA-256 verified. After setup nothing downloads at chat time.
 - **Remote** — point it at any OpenAI-compatible endpoint (OpenAI, OpenRouter, a self-hosted server, …). Only a config entry — no code.
 
 Then start chatting. The agent can read files, run shell commands, edit code, use git and dotnet, and search the web — each tool permission-gated (approve / always / never per tool).

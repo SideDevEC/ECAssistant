@@ -20,7 +20,7 @@ Agent actions are the main privacy surface — an agent that can run shell comma
 
 | Path | What |
 |---|---|
-| `~/.ECAssistantLLM/` | LLM server binaries, models, server config (local mode) |
+| `~/ECALLM/` | LLM server binaries, models, server config (local mode) |
 | app config dir | `appsettings.json` and your agent's memory files |
 
 Model files are SHA-256 verified against pinned checksums during install. After setup, chat time involves zero downloads.
