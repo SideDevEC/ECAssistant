@@ -76,11 +76,14 @@ First run asks local or remote, downloads only what you pick, and you're chattin
 
 - **[Getting started](docs/getting-started.md)** — install, configure, first conversation
 - **[Agent lifecycle](docs/agent-lifecycle.md)** — composition root → session → orchestrator
+- **[Embedding the agent](docs/embedding-guide.md)** — add ECAssistant to *your* app, step by step (all hosting options)
+- **[Custom tools](docs/custom-tools.md)** — teach the agent new capabilities in one file (schema, permissions, projections, dataflow)
+- **[Testing your agent](docs/testing.md)** — three levels: MockEngine → user-experience E2E → real-model journey tests (both tiers)
 - **[Tools & permissions](docs/tools-and-permissions.md)** — the 11 built-ins, writing custom tools
 - **[Local vs Remote](docs/local-vs-remote.md)** — GGUF vs OpenAI-compatible, switching
 - **[Security & Privacy](docs/security-and-privacy.md)** — what runs where, what leaves your machine
 
-Each repo also ships its own `ARCHITECTURE.md` for the deep dive.
+**For AI agents & LLM tools:** [AI-NAVIGATION.md](AI-NAVIGATION.md) — machine-readable map of all six repos, dependency rules, bounded-context protocol, release law. Every repo also ships its own `AGENTS.md` plus `ARCHITECTURE.md` / `API-INDEX.md` / `RELATIONSHIP-GRAPH.md` (LDC artifacts, kept in sync, enforcement-checked).
 
 ## Contributing
 
